@@ -1,3 +1,4 @@
+/*for tappable element easy to hit minimum width and height should be 40px or 48px for better*/
 nav a,
 button {
   min-width: 48px;
