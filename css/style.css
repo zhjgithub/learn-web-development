@@ -1,6 +1,17 @@
 /*for tappable element easy to hit minimum width and height should be 40px or 48px for better*/
-nav a,
+
 button {
-  min-width: 48px;
-  min-height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+}
+
+
+/*tag a default display is inline, not effected by min-width or min-height*/
+
+nav a {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /*padding-left: 8px;
+    padding-right: 8px;*/
 }
