@@ -1,0 +1,13 @@
+/*@import url(no.css) only screen and (min-width: 500px);
+#Perf Matters*/
+
+/*@media screen and (min-width: 500px) {
+  body {
+    background-color: blue;
+  }
+}*/
+
+/*<link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">*/
+body {
+  background-color: blue;
+}
