@@ -2,22 +2,65 @@
 <html lang="en">
 
 <head>
-    <title>My HTML</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">
+  <title>My HTML</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <nav>
-        <a href="#">a link</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <nav>
+    <a href="#">a link</a>
+  </nav>
+  <p></p>
+  <button name="button">a button</button>
+  <hr>
+  <h2>Responsive patterns</h2>
+  <p>Column drop layout</p>
+  <div class="column-drop-container">
+    <div class="column-drop-first column-drop-box"></div>
+    <div class="column-drop-second column-drop-box"></div>
+    <div class="column-drop-third column-drop-box"></div>
+    <div class="column-drop-forth column-drop-box"></div>
+  </div>
+  <p>Mostly fluid layout</p>
+  <div class="mostly-fluid-container">
+    <div class="mostly-fluid-first mostly-fluid-box"></div>
+    <div class="mostly-fluid-second mostly-fluid-box"></div>
+    <div class="mostly-fluid-third mostly-fluid-box"></div>
+    <div class="mostly-fluid-forth mostly-fluid-box"></div>
+    <div class="mostly-fluid-fifth mostly-fluid-box"></div>
+  </div>
+  <p>Layout shifter</p>
+  <div class="layout-shifter-container">
+    <div class="layout-shifter-box layout-shifter-first"></div>
+    <div class="layout-shifter-container" id="layout-shifter-container2">
+      <div class="layout-shifter-box layout-shifter-second"></div>
+      <div class="layout-shifter-box layout-shifter-third"></div>
+    </div>
+    <div class="layout-shifter-box layout-shifter-forth"></div>
+  </div>
+  <p>Off canvas layout</p>
+  <div class="off-canvas-container">
+    <nav id="off-canvas-drawer" class="off-canvas-nav">
     </nav>
-    <p></p>
-    <button name="button">a button</button>
+    <main class="off-canvas-main">
+      <div id="off-canvas-menu">&#9776;</div>
+    </main>
+  </div>
+  <!-- <script>
+  menu.addEventListener("click", function(e) {
+    drawer.classList.toggle("open");
+    e.stopPropagation();
+  });
+  $('off-canvas-menu').addEventListener("click", function(e) {
+    $("off-canvas-drawer").classList.toggle("oepn");
+    e.stopPropagation();
+  });
+  </script> -->
 </body>
 
 </html>

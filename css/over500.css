@@ -3,11 +3,11 @@
 
 /*@media screen and (min-width: 500px) {
   body {
-    background-color: blue;
+    background-color: DodgerBlue;
   }
 }*/
 
 /*<link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">*/
 body {
-  background-color: blue;
+  background-color: DodgerBlue;
 }

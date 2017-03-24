@@ -1,33 +1,264 @@
 /*for tappable element easy to hit minimum width and height should be 40px or 48px for better*/
 
 button {
-    min-width: 48px;
-    min-height: 48px;
-    cursor: pointer;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
 }
 
 
 /*tag a default display is inline, not effected by min-width or min-height*/
 
 nav a {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    /*padding-left: 8px;
-    padding-right: 8px;*/
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  /*padding-left: 8px;
+  padding-right: 8px;*/
 }
 
 body {
-  background-color: green;
+  background-color: BlueViolet;
 }
 
 @media screen and (max-width: 400px) {
   body {
-    background-color: red;
+    background-color: DarkSalmon;
   }
 }
 
 @media screen and (min-width: 600px) {
   body {
-    background-color: blue;
+    background-color: OrangeRed;
+  }
+}
+
+/*column drop layout pattern*/
+.column-drop-container {
+  background-color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
+  box-sizing: border-box;
+}
+
+.column-drop-box {
+  width: 100%;
+  height: 50px;
+}
+
+.column-drop-first {
+  background-color: red;
+}
+
+.column-drop-second {
+  background-color: blue;
+}
+
+.column-drop-third {
+  background-color: green;
+}
+
+.column-drop-forth {
+  background-color: yellow;
+}
+
+@media only screen and (min-width: 400px) {
+  .column-drop-first {
+    width: 25%;
+  }
+
+  .column-drop-second {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .column-drop-first,
+  .column-drop-third {
+    width: 25%;
+  }
+
+  .column-drop-second {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .column-drop-first,
+  .column-drop-second,
+  .column-drop-third,
+  .column-drop-forth {
+    width: 25%;
+  }
+}
+
+/*mostly fluid layout pattern*/
+.mostly-fluid-container {
+  background-color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  box-sizing: border-box;
+  align-content: flex-start;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.mostly-fluid-box {
+  width: 100%;
+  height: 50px;
+}
+
+.mostly-fluid-first {
+  background-color: red;
+}
+
+.mostly-fluid-second {
+  background-color: blue;
+}
+
+.mostly-fluid-third {
+  background-color: green;
+}
+
+.mostly-fluid-forth {
+  background-color: yellow;
+}
+
+.mostly-fluid-fifth {
+  background-color: cyan;
+}
+
+@media only screen and (min-width: 400px) {
+  .mostly-fluid-second,
+  .mostly-fluid-third {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .mostly-fluid-first,
+  .mostly-fluid-second {
+    width: 50%;
+  }
+
+  .mostly-fluid-third,
+  .mostly-fluid-forth,
+  .mostly-fluid-fifth {
+    width: 33.333333%;
+  }
+}
+
+/*layout shifter pattern*/
+.layout-shifter-container {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  align-content: flex-start;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.layout-shifter-box {
+  width: 100%;
+  height: 50px;
+}
+
+.layout-shifter-first {
+  background-color: red;
+}
+
+.layout-shifter-second {
+  background-color: blue;
+}
+
+.layout-shifter-third {
+  background-color: green;
+}
+
+.layout-shifter-forth {
+  background-color: yellow;
+}
+
+.layout-shifter-fifth {
+  background-color: cyan;
+}
+
+@media screen and (min-width: 400px) {
+  .layout-shifter-first {
+    width: 50%;
+    height: 100px;
+  }
+
+  #layout-shifter-container2 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .layout-shifter-first {
+    width: 25%;
+    order: 1;
+  }
+
+  .layout-shifter-forth {
+    width: 25%;
+    order: -1;
+    height: 100px;
+  }
+}
+
+/*off canvas layout pattern*/
+.off-canvas-container {
+  background-color: white;
+  height: 200px;
+}
+
+.off-canvas-nav {
+  background-color: yellow;
+  width: 100px;
+  /*height: 100%;*/
+  height: 200px;
+  position: absolute;
+  transform: translate(-100px, 0);
+  transition: transform 0.3s ease;
+}
+
+.off-canvas-main {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+/*.off-canvas-nav.open {
+  transform: translate(0, 0);
+}*/
+
+@media screen and (min-width: 500px) {
+  .off-canvas-nav {
+    position: relative;
+    transform: translate(0, 0);
+  }
+
+  .off-canvas-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .off-canvas-main {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  #off-canvas-menu {
+    display: none;
   }
 }
