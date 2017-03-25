@@ -222,10 +222,15 @@ body {
   height: 200px;
 }
 
+.off-canvas-nav,
+.off-canvas-main {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
 .off-canvas-nav {
   background-color: yellow;
   width: 100px;
-  /*height: 100%;*/
   height: 200px;
   position: absolute;
   transform: translate(-100px, 0);
@@ -238,9 +243,9 @@ body {
   background-color: green;
 }
 
-/*.off-canvas-nav.open {
+#off-canvas-drawer.open {
   transform: translate(0, 0);
-}*/
+}
 
 @media screen and (min-width: 500px) {
   .off-canvas-nav {

@@ -48,19 +48,23 @@
     <nav id="off-canvas-drawer" class="off-canvas-nav">
     </nav>
     <main class="off-canvas-main">
-      <div id="off-canvas-menu">&#9776;</div>
+      <a id="off-canvas-menu">&#9776;</a>
     </main>
   </div>
-  <!-- <script>
+  <script>
+  var menu = document.getElementById("off-canvas-menu");
+  var drawer = document.getElementById("off-canvas-drawer");
+  var main = document.querySelector(".off-canvas-main");
+
   menu.addEventListener("click", function(e) {
     drawer.classList.toggle("open");
     e.stopPropagation();
   });
-  $('off-canvas-menu').addEventListener("click", function(e) {
-    $("off-canvas-drawer").classList.toggle("oepn");
-    e.stopPropagation();
+
+  main.addEventListener("click", function() {
+    drawer.classList.remove("open");
   });
-  </script> -->
+  </script>
 </body>
 
 </html>
