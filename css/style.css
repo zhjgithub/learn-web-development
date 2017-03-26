@@ -1,269 +1,339 @@
 /*for tappable element easy to hit minimum width and height should be 40px or 48px for better*/
 
 button {
-  min-width: 48px;
-  min-height: 48px;
-  cursor: pointer;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
 }
 
 
 /*tag a default display is inline, not effected by min-width or min-height*/
 
 nav a {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  /*padding-left: 8px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /*padding-left: 8px;
   padding-right: 8px;*/
 }
 
 body {
-  background-color: BlueViolet;
+    background-color: BlueViolet;
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    background-color: DarkSalmon;
-  }
+    body {
+        background-color: DarkSalmon;
+    }
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    background-color: OrangeRed;
-  }
+    body {
+        background-color: OrangeRed;
+    }
 }
 
+@media screen and (min-width: 800px) {}
+
+@media screen and (min-width: 1024px) {}
+
+
 /*column drop layout pattern*/
+
 .column-drop-container {
-  background-color: white;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  display: flex;
-  flex-flow: wrap;
-  align-content: flex-start;
-  box-sizing: border-box;
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
 }
 
 .column-drop-box {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 .column-drop-first {
-  background-color: red;
+    background-color: red;
 }
 
 .column-drop-second {
-  background-color: blue;
+    background-color: blue;
 }
 
 .column-drop-third {
-  background-color: green;
+    background-color: green;
 }
 
 .column-drop-forth {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 @media only screen and (min-width: 400px) {
-  .column-drop-first {
-    width: 25%;
-  }
-
-  .column-drop-second {
-    width: 75%;
-  }
+    .column-drop-first {
+        width: 25%;
+    }
+    .column-drop-second {
+        width: 75%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
-  .column-drop-first,
-  .column-drop-third {
-    width: 25%;
-  }
-
-  .column-drop-second {
-    width: 50%;
-  }
+    .column-drop-first,
+    .column-drop-third {
+        width: 25%;
+    }
+    .column-drop-second {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-  .column-drop-first,
-  .column-drop-second,
-  .column-drop-third,
-  .column-drop-forth {
-    width: 25%;
-  }
+    .column-drop-first,
+    .column-drop-second,
+    .column-drop-third,
+    .column-drop-forth {
+        width: 25%;
+    }
 }
 
+
 /*mostly fluid layout pattern*/
+
 .mostly-fluid-container {
-  background-color: white;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  box-sizing: border-box;
-  align-content: flex-start;
-  display: flex;
-  flex-flow: wrap;
+    background-color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    box-sizing: border-box;
+    align-content: flex-start;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .mostly-fluid-box {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 .mostly-fluid-first {
-  background-color: red;
+    background-color: red;
 }
 
 .mostly-fluid-second {
-  background-color: blue;
+    background-color: blue;
 }
 
 .mostly-fluid-third {
-  background-color: green;
+    background-color: green;
 }
 
 .mostly-fluid-forth {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .mostly-fluid-fifth {
-  background-color: cyan;
+    background-color: cyan;
 }
 
 @media only screen and (min-width: 400px) {
-  .mostly-fluid-second,
-  .mostly-fluid-third {
-    width: 50%;
-  }
+    .mostly-fluid-second,
+    .mostly-fluid-third {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
-  .mostly-fluid-first,
-  .mostly-fluid-second {
-    width: 50%;
-  }
-
-  .mostly-fluid-third,
-  .mostly-fluid-forth,
-  .mostly-fluid-fifth {
-    width: 33.333333%;
-  }
+    .mostly-fluid-first,
+    .mostly-fluid-second {
+        width: 50%;
+    }
+    .mostly-fluid-third,
+    .mostly-fluid-forth,
+    .mostly-fluid-fifth {
+        width: 33.333333%;
+    }
 }
 
+
 /*layout shifter pattern*/
+
 .layout-shifter-container {
-  background-color: white;
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  align-content: flex-start;
-  display: flex;
-  flex-flow: wrap;
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    align-content: flex-start;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .layout-shifter-box {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 .layout-shifter-first {
-  background-color: red;
+    background-color: red;
 }
 
 .layout-shifter-second {
-  background-color: blue;
+    background-color: blue;
 }
 
 .layout-shifter-third {
-  background-color: green;
+    background-color: green;
 }
 
 .layout-shifter-forth {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .layout-shifter-fifth {
-  background-color: cyan;
+    background-color: cyan;
 }
 
 @media screen and (min-width: 400px) {
-  .layout-shifter-first {
-    width: 50%;
-    height: 100px;
-  }
-
-  #layout-shifter-container2 {
-    width: 50%;
-  }
+    .layout-shifter-first {
+        width: 50%;
+        height: 100px;
+    }
+    #layout-shifter-container2 {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 500px) {
-  .layout-shifter-first {
-    width: 25%;
-    order: 1;
-  }
-
-  .layout-shifter-forth {
-    width: 25%;
-    order: -1;
-    height: 100px;
-  }
+    .layout-shifter-first {
+        width: 25%;
+        order: 1;
+    }
+    .layout-shifter-forth {
+        width: 25%;
+        order: -1;
+        height: 100px;
+    }
 }
 
+
 /*off canvas layout pattern*/
+
 .off-canvas-container {
-  background-color: white;
-  height: 200px;
+    background-color: white;
+    height: 200px;
 }
 
 .off-canvas-nav,
 .off-canvas-main {
-  box-sizing: border-box;
-  padding: 8px;
+    box-sizing: border-box;
+    padding: 8px;
 }
 
 .off-canvas-nav {
-  background-color: yellow;
-  width: 100px;
-  height: 200px;
-  position: absolute;
-  transform: translate(-100px, 0);
-  transition: transform 0.3s ease;
+    background-color: yellow;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-100px, 0);
+    transition: transform 0.3s ease;
 }
 
 .off-canvas-main {
-  height: 100%;
-  width: 100%;
-  background-color: green;
+    height: 100%;
+    width: 100%;
+    background-color: green;
 }
 
 #off-canvas-drawer.open {
-  transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 @media screen and (min-width: 500px) {
-  .off-canvas-nav {
-    position: relative;
-    transform: translate(0, 0);
-  }
+    .off-canvas-nav {
+        position: relative;
+        transform: translate(0, 0);
+    }
+    .off-canvas-container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .off-canvas-main {
+        width: auto;
+        flex-grow: 1;
+    }
+    #off-canvas-menu {
+        display: none;
+    }
+}
 
-  .off-canvas-container {
-    display: flex;
-    flex-flow: row nowrap;
-  }
 
-  .off-canvas-main {
-    width: auto;
-    flex-grow: 1;
-  }
+/*hidden columns*/
 
-  #off-canvas-menu {
-    display: none;
-  }
+table {
+    border-width: 1px;
+    border-style: solid;
+}
+
+@media screen and (max-width: 499px) {
+    .hidden-columns-full-name,
+    .hidden-columns-inning {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .hidden-columns-short-name {
+        display: none;
+    }
+}
+
+
+/*no more tables*/
+
+@media screen and (max-width: 499px) {
+    .no-more-tables-table,
+    .no-more-tables-table thead,
+    .no-more-tables-table tbody,
+    .no-more-tables-table th,
+    .no-more-tables-table td,
+    .no-more-tables-table tr {
+        display: block;
+    }
+    .no-more-tables-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .no-more-tables-table td {
+        position: relative;
+        padding-left: 25%;
+    }
+    .no-more-tables-table td::before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-th);
+        font-weight: bold;
+    }
+    .no-more-tables-table td:first-of-type {
+        font-weight: bold;
+    }
+}
+
+
+/*contained tables*/
+
+.contained-tables-container {
+    overflow-x: auto;
+}
+
+.contained-tables-container td,
+.contained-tables-container th {
+    min-width: 90px;
+    text-align: center;
 }

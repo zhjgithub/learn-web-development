@@ -2,69 +2,167 @@
 <html lang="en">
 
 <head>
-  <title>My HTML</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">
+    <title>My HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/over500.css">
 </head>
 
 <body>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <nav>
-    <a href="#">a link</a>
-  </nav>
-  <p></p>
-  <button name="button">a button</button>
-  <hr>
-  <h2>Responsive patterns</h2>
-  <p>Column drop layout</p>
-  <div class="column-drop-container">
-    <div class="column-drop-first column-drop-box"></div>
-    <div class="column-drop-second column-drop-box"></div>
-    <div class="column-drop-third column-drop-box"></div>
-    <div class="column-drop-forth column-drop-box"></div>
-  </div>
-  <p>Mostly fluid layout</p>
-  <div class="mostly-fluid-container">
-    <div class="mostly-fluid-first mostly-fluid-box"></div>
-    <div class="mostly-fluid-second mostly-fluid-box"></div>
-    <div class="mostly-fluid-third mostly-fluid-box"></div>
-    <div class="mostly-fluid-forth mostly-fluid-box"></div>
-    <div class="mostly-fluid-fifth mostly-fluid-box"></div>
-  </div>
-  <p>Layout shifter</p>
-  <div class="layout-shifter-container">
-    <div class="layout-shifter-box layout-shifter-first"></div>
-    <div class="layout-shifter-container" id="layout-shifter-container2">
-      <div class="layout-shifter-box layout-shifter-second"></div>
-      <div class="layout-shifter-box layout-shifter-third"></div>
-    </div>
-    <div class="layout-shifter-box layout-shifter-forth"></div>
-  </div>
-  <p>Off canvas layout</p>
-  <div class="off-canvas-container">
-    <nav id="off-canvas-drawer" class="off-canvas-nav">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <nav>
+        <a href="#">a link</a>
     </nav>
-    <main class="off-canvas-main">
-      <a id="off-canvas-menu">&#9776;</a>
-    </main>
-  </div>
-  <script>
-  var menu = document.getElementById("off-canvas-menu");
-  var drawer = document.getElementById("off-canvas-drawer");
-  var main = document.querySelector(".off-canvas-main");
+    <p></p>
+    <button name="button">a button</button>
+    <hr>
+    <h2>Responsive Patterns</h2>
+    <p>Column drop layout</p>
+    <div class="column-drop-container">
+        <div class="column-drop-first column-drop-box"></div>
+        <div class="column-drop-second column-drop-box"></div>
+        <div class="column-drop-third column-drop-box"></div>
+        <div class="column-drop-forth column-drop-box"></div>
+    </div>
+    <p>Mostly fluid layout</p>
+    <div class="mostly-fluid-container">
+        <div class="mostly-fluid-first mostly-fluid-box"></div>
+        <div class="mostly-fluid-second mostly-fluid-box"></div>
+        <div class="mostly-fluid-third mostly-fluid-box"></div>
+        <div class="mostly-fluid-forth mostly-fluid-box"></div>
+        <div class="mostly-fluid-fifth mostly-fluid-box"></div>
+    </div>
+    <p>Layout shifter</p>
+    <div class="layout-shifter-container">
+        <div class="layout-shifter-box layout-shifter-first"></div>
+        <div class="layout-shifter-container" id="layout-shifter-container2">
+            <div class="layout-shifter-box layout-shifter-second"></div>
+            <div class="layout-shifter-box layout-shifter-third"></div>
+        </div>
+        <div class="layout-shifter-box layout-shifter-forth"></div>
+    </div>
+    <p>Off canvas layout</p>
+    <div class="off-canvas-container">
+        <nav id="off-canvas-drawer" class="off-canvas-nav">
+        </nav>
+        <main class="off-canvas-main">
+            <a id="off-canvas-menu">&#9776;</a>
+        </main>
+    </div>
+    <hr>
+    <h2>Responsive Table </h2>
+    <p>Hidden columns</p>
+    <table>
+        <caption>table example</caption>
+        <thead>
+            <tr>
+                <th class="hidden-columns-short-name">Team</th>
+                <th class="hidden-columns-full-name">Team</th>
+                <th class="hidden-columns-inning">1st</th>
+                <th class="hidden-columns-inning">2nd</th>
+                <th class="hidden-columns-inning">3rd</th>
+                <th class="hidden-columns-final">Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="hidden-columns-short-name">AB</td>
+                <td class="hidden-columns-full-name">Alpha Beta</td>
+                <td class="hidden-columns-inning">5</td>
+                <td class="hidden-columns-inning">1</td>
+                <td class="hidden-columns-inning">4</td>
+                <td class="hidden-columns-final">10</td>
+            </tr>
+            <tr>
+                <td class="hidden-columns-short-name">CD</td>
+                <td class="hidden-columns-full-name">Car Day</td>
+                <td class="hidden-columns-inning">2</td>
+                <td class="hidden-columns-inning">6</td>
+                <td class="hidden-columns-inning">3</td>
+                <td class="hidden-columns-final">11</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>No more tables</p>
+    <table class="no-more-tables-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>1st</th>
+                <th>2nd</th>
+                <th>3rd</th>
+                <th>Final</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-th="Team">Alpha Beta</td>
+                <td data-th="1st">5</td>
+                <td data-th="2nd">1</td>
+                <td data-th="3rd">4</td>
+                <td data-th="Final">10</td>
+            </tr>
+            <tr>
+                <td data-th="Team">Car Day</td>
+                <td data-th="1st">2</td>
+                <td data-th="2en">6</td>
+                <td data-th="3rd">3</td>
+                <td data-th="Final">11</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Contained tables</p>
+    <div class="contained-tables-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>1st</th>
+                    <th>2nd</th>
+                    <th>3rd</th>
+                    <th>4th</th>
+                    <th>5th</th>
+                    <th>Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alpha Beta</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Car Day</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        var menu = document.getElementById("off-canvas-menu");
+        var drawer = document.getElementById("off-canvas-drawer");
+        var main = document.querySelector(".off-canvas-main");
 
-  menu.addEventListener("click", function(e) {
-    drawer.classList.toggle("open");
-    e.stopPropagation();
-  });
+        menu.addEventListener("click", function (e) {
+            drawer.classList.toggle("open");
+            e.stopPropagation();
+        });
 
-  main.addEventListener("click", function() {
-    drawer.classList.remove("open");
-  });
-  </script>
+        main.addEventListener("click", function () {
+            drawer.classList.remove("open");
+        });
+    </script>
 </body>
 
 </html>
