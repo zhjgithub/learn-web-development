@@ -332,8 +332,11 @@ table {
     overflow-x: auto;
 }
 
-.contained-tables-container td,
-.contained-tables-container th {
-    min-width: 90px;
+.contained-tables-container td {
+    min-width: 75px;
     text-align: center;
+}
+
+.contained-tables-container th:first-of-type {
+    min-width: 90px;
 }
