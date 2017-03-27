@@ -340,3 +340,20 @@ table {
 .contained-tables-container th:first-of-type {
     min-width: 90px;
 }
+
+
+/*relative image*/
+
+.relative-image {
+    margin-right: 10px;
+    max-width: 426px;
+    width: calc((100% - 10px) / 2);
+    /*remove whitespace between inline or inline-block elements*/
+    float: left;
+    /*or font-size 0
+    font-size: 0;*/
+}
+
+.relative-image:last-of-type {
+    margin-right: 0;
+}
