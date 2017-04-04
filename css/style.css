@@ -20,6 +20,16 @@ body {
     background-color: BlueViolet;
 }
 
+.truncate-multiline {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 4em; /* Fallback for non-webkit */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 400px) {
     body {
         background-color: DarkSalmon;
