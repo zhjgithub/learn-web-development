@@ -48,15 +48,18 @@
             </label>
         </section>
         <section>
-            <h3>Autocomplete</h3>
-            <label class="line" for="for-autocomplete-email">
-                <span>Email</span>
-                <input id="for-autocomplete-email" type="email" name="email" placeholder="example@site.com" autocomplete="email">
-            </label>
-            <label class="line" for="for-autocomplete-name">
-                <span>Name</span>
-                <input type="text" name="name" autocomplete="name">
-            </label>
+            <form action="#" method="post">
+                <h3>Autocomplete</h3>
+                <label class="line" for="for-autocomplete-email">
+                    <span>Email</span>
+                    <input id="for-autocomplete-email" type="email" name="email" placeholder="example@site.com" autocomplete="email" required>
+                </label>
+                <label class="line" for="for-autocomplete-name">
+                    <span>Name</span>
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <button type="submit">Test required</button>
+            </form>
         </section>
     </div>
 </body>
