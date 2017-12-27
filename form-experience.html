@@ -64,7 +64,7 @@
         <section>
             <h3>Gradebook</h3>
             <p>All grade values are 0, 10, 20, 30, ... 100. Use the average as a guide for issuing a letter grade.</p>
-            <form action="#" id="grading" method="post">
+            <form action="#" id="grading" method="post" oninput="average.value=(parseInt(quiz1.value)+parseInt(quiz2.value)+parseInt(quiz3.value)+parseInt(quiz4.value))/4.0">
                 <table>
                     <tr>
                         <td>
