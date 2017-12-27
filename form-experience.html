@@ -6,19 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Form Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        section {
+            margin-bottom: 26px;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <h3>Date and Time</h3>
-        <label for="for-date">
-            <span>Date</span>
-            <input type="date" id="for-date" name="date">
-        </label>
-        <label for="for-time">
-            <span>Time</span>
-            <input type="time" id="for-time" name="time">
-        </label>
+        <section>
+            <h3>Date and Time</h3>
+            <label for="for-date">
+                <span>Date</span>
+                <input type="date" id="for-date" name="date">
+            </label>
+            <label for="for-time">
+                <span>Time</span>
+                <input type="time" id="for-time" name="time">
+            </label>
+        </section>
+        <section>
+            <h3>Datalist</h3>
+            <label for="for-datelist">
+                <span>Select a fruit</span>
+                <input id="for-datelist" type="text" name="list" list="list-fruits">
+                <datalist id="list-fruits">
+                    <option value="orange"></option>
+                    <option value="banana"></option>
+                    <option value="apple"></option>
+                    <option value="pear"></option>
+                </datalist>
+            </label>
+        </section>
     </div>
 </body>
 
