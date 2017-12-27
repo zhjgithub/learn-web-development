@@ -10,6 +10,14 @@
         section {
             margin-bottom: 26px;
         }
+
+        .line {
+            display: block;
+        }
+
+        .line+.line {
+            margin-top: 8px;
+        }
     </style>
 </head>
 
@@ -37,6 +45,17 @@
                     <option value="apple"></option>
                     <option value="pear"></option>
                 </datalist>
+            </label>
+        </section>
+        <section>
+            <h3>Autocomplete</h3>
+            <label class="line" for="for-autocomplete-email">
+                <span>Email</span>
+                <input id="for-autocomplete-email" type="email" name="email" placeholder="example@site.com" autocomplete="email">
+            </label>
+            <label class="line" for="for-autocomplete-name">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name">
             </label>
         </section>
     </div>
